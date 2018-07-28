@@ -33,11 +33,11 @@ import com.antonioleiva.mvpexample.app.R;
 
 import java.util.List;
 
-public class MainActivity extends Activity implements MainView, AdapterView.OnItemClickListener {
+public class MainActivity extends Activity implements IMainView, AdapterView.OnItemClickListener {
 
     private ListView listView;
     private ProgressBar progressBar;
-    private MainPresenter presenter;
+    private IMainPresenter presenter;
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

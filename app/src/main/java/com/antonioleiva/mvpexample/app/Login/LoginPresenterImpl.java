@@ -18,12 +18,12 @@
 
 package com.antonioleiva.mvpexample.app.Login;
 
-public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLoginFinishedListener {
+public class LoginPresenterImpl implements ILoginPresenter, ILoginInteractor.OnLoginFinishedListener {
 
-    private LoginView loginView;
-    private LoginInteractor loginInteractor;
+    private ILoginView loginView;
+    private ILoginInteractor loginInteractor;
 
-    public LoginPresenterImpl(LoginView loginView, LoginInteractor loginInteractor) {
+    public LoginPresenterImpl(ILoginView loginView, ILoginInteractor loginInteractor) {
         this.loginView = loginView;
         this.loginInteractor = loginInteractor;
     }

@@ -18,14 +18,8 @@
 
 package com.antonioleiva.mvpexample.app.Login;
 
-public interface LoginView {
-    void showProgress();
+public interface ILoginPresenter {
+    void validateCredentials(String username, String password);
 
-    void hideProgress();
-
-    void setUsernameError();
-
-    void setPasswordError();
-
-    void navigateToHome();
+    void onDestroy();
 }

@@ -16,18 +16,13 @@
  *
  */
 
-package com.antonioleiva.mvpexample.app.Login;
+package com.antonioleiva.mvpexample.app.main;
 
-public interface LoginInteractor {
+public interface IMainPresenter {
 
-    interface OnLoginFinishedListener {
-        void onUsernameError();
+    void onResume();
 
-        void onPasswordError();
+    void onItemClicked(int position);
 
-        void onSuccess();
-    }
-
-    void login(String username, String password, OnLoginFinishedListener listener);
-
+    void onDestroy();
 }

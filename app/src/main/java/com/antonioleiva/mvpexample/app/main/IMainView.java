@@ -20,7 +20,7 @@ package com.antonioleiva.mvpexample.app.main;
 
 import java.util.List;
 
-public interface MainView {
+public interface IMainView {
 
     void showProgress();
 

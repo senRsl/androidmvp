@@ -18,11 +18,13 @@
 
 package com.antonioleiva.mvpexample.app.main;
 
-public interface MainPresenter {
+import java.util.List;
 
-    void onResume();
+public interface IFindItemsInteractor {
 
-    void onItemClicked(int position);
+    interface OnFinishedListener {
+        void onFinished(List<String> items);
+    }
 
-    void onDestroy();
+    void findItems(OnFinishedListener listener);
 }
